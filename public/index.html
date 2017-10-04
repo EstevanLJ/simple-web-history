@@ -109,7 +109,7 @@
                                         <td>{{historico.status}}</td>
                                         <td>{{historico.request_time ? historico.request_time + ' ms' : '-'}}</td>
                                         <td>{{historico.error_code}}</td>
-                                        <td>{{historico.data}}</td>
+                                        <td>{{converterData(historico.data)}}</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -159,6 +159,7 @@
 
     <script src="/js/vue.min.js"></script>
     <script src="/js/axios.min.js"></script>
+    <script src="/js/moment.min.js"></script>
     <script src="/js/index.js"></script>
 
 </body>

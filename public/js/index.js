@@ -1,4 +1,4 @@
-new Vue({
+let vm = new Vue({
     el: '#app',
     data: {
         site_selecionado: null,
@@ -88,6 +88,10 @@ new Vue({
 
         styleLinha(site) {
             return (site.status >= 200 && site.status <= 300) ? 'has-text-success' : ((site.status < 200 || site.status > 300) ? 'has-text-danger' : '');
+        },
+
+        converterData(data) {
+            return moment.utc(data).local().format('YYYY-MM-DD HH:mm:ss');
         }
     }
 });
