@@ -6,7 +6,7 @@ Exemplo desenvolvido para o minicurso de Node.js do CCTEC 2017
 
 ```sh
 git clone https://github.com/EstevanLJ/simple-web-history
-cd simple-web-crawler
+cd simple-web-history
 npm install
 cp database.sqlite.example database.sqlite
 ```
